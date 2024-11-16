@@ -1,0 +1,6 @@
+*.DS_Store
+
+config/*
+!config/config_sample.json
+
+node_modules/*

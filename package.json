@@ -1,0 +1,25 @@
+{
+  "name": "express-test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon bin/www --exec babel-node --presets babel-preset-env --inspect"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "jade": "^1.9.2",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <h1>Список пользователей</h1>
+    <div class="flex-horizontal filter-menu">
+        <button class="btn" id="filterButton">Фильтрация</button>
+        <div class="filter-menu-content" id="filterContent">
+            <div class="container">
+
+                <input type="radio" id="option1" name="options" value="FirstName">
+                <label for="option1">FirstName</label>
+        
+                <input type="radio" id="option2" name="options" value="LastName">
+                <label for="option2">LastName</label>
+        
+                <input type="radio" id="option3" name="options" value="DateOfBirth">
+                <label for="option3">DateOfBirth</label>
+        
+                <input type="radio" id="option4" name="options" value="Country">
+                <label for="option4">Country</label>
+        
+                <input type="radio" id="option5" name="options" value="City">
+                <label for="option5">City</label>
+        
+                <input type="radio" id="option6" name="options" value="ZipCode">
+                <label for="option6">ZipCode</label>
+    
+                <input type="radio" id="option7" name="options" value="Address">
+                <label for="option7">Address</label>
+            </div>
+            <input type="text" class="filter-input" id="filterInput" placeholder="Введите значение...">
+        </div>
+    </div>
+    <div class="flex-horizontal">
+        <div class="dropdown">
+            <button class="btn">Сортировка</button>
+            <div class="dropdown-content">
+                <button onclick="sortUsers('FirstName')">по имени</button>
+                <button onclick="sortUsers('LastName')">по фамилии</button>
+                <button onclick="sortUsers('DateOfBirth')">по дате рождения</button>
+                <button onclick="sortUsers('Country')">по стране</button>
+                <button onclick="sortUsers('City')">по городу</button>
+                <button onclick="sortUsers('ZipCode')">по индексу</button>
+                <button onclick="sortUsers('Address')">по адресу</button>
+            </div>
+        </div>
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>UserID</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>DateOfBirth</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>ZipCode</th>
+                    <th>Address</th>
+                    <th>Added<br>Timestamp</th>
+                    <th>Updates<br>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
